@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EatClub - Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Eat<span>Club</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#restaurants">Restaurants</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Banner -->
+    <section class="hero">
+        <div class="hero-banner">
+            <div class="container">
+                <!-- EatClub Logo and Navigation -->
+                <div class="hero-header">
+                    <div class="logo-container">
+                        <div class="logo-circle">
+                            <span class="logo-text">Eat</span>
+                            <span class="logo-icon"><i class="fas fa-utensils"></i></span>
+                            <span class="logo-text">Club</span>
+                        </div>
+                    </div>
+                    <div class="hero-nav">
+                        <a href="#offers" class="hero-nav-item">
+                            <i class="fas fa-tag"></i>
+                            <span>Offers</span>
+                        </a>
+                        <a href="#restaurants" class="hero-nav-item">
+                            <i class="fas fa-store"></i>
+                            <span>Restaurants</span>
+                        </a>
+                        <a href="#categories" class="hero-nav-item">
+                            <i class="fas fa-list"></i>
+                            <span>Categories</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Hungry? <span class="highlight">Good,</span> we are here to serve you</h1>
+                        <p>Order from your favorite restaurants or explore new ones with just a few taps</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-large">
+                                <i class="fas fa-utensils"></i> Order Food
+                            </button>
+                            <button class="btn btn-outline btn-large">
+                                <i class="fas fa-store"></i> View Restaurants
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Actions -->
+                    <div class="quick-actions">
+                        <div class="quick-action" id="scanToPay">
+                            <div class="action-icon">
+                                <i class="fas fa-qrcode"></i>
+                                <div class="pulse"></div>
+                            </div>
+                            <span>Scan to Pay</span>
+                        </div>
+                        <div class="quick-action" id="quickShop">
+                            <div class="action-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <span>Quick Shop</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search for restaurants or cuisines...">
+                        <button class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Food Categories</h2>
+            <div class="category-grid">
+                <a href="#pizza" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=300&h=300&fit=crop&auto=format&q=80" alt="Pizza" loading="lazy">
+                    <h3>Pizza</h3>
+                </a>
+                <a href="#burgers" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=300&fit=crop&auto=format&q=80" alt="Burgers" loading="lazy">
+                    <h3>Burgers</h3>
+                </a>
+                <a href="#biryani" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=300&h=300&fit=crop&auto=format&q=80" alt="Biryani" loading="lazy">
+                    <h3>Biryani</h3>
+                </a>
+                <a href="#chinese" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300&h=300&fit=crop&auto=format&q=80" alt="Chinese" loading="lazy">
+                    <h3>Chinese</h3>
+                </a>
+                <a href="#desserts" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704c?w=300&h=300&fit=crop&auto=format&q=80" alt="Desserts" loading="lazy">
+                    <h3>Desserts</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Restaurants -->
+    <section class="restaurants" id="restaurants">
+        <div class="container">
+            <h2 class="section-title">Popular Restaurants</h2>
+            <div class="restaurant-grid">
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&h=400&fit=crop&auto=format&q=80" alt="MOJO Pizza" loading="lazy">
+                        <div class="discount-tag">30% OFF</div>
+                    </div>
+                    <div class="restaurant-info">
+                        <h3>MOJO Pizza</h3>
+                        <p>Pizza, Italian, Fast Food</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.5
+                            <span>• 30-40 mins • ₹100 for two</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Pure Veg</span>
+                            <span class="tag">Free Delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop&auto=format&q=80" alt="Box8" loading="lazy">
+                        <div class="discount-tag">20% OFF</div>
+                    </div>
+                    <div class="restaurant-info">
+                        <h3>Box8</h3>
+                        <p>North Indian, Chinese, Biryani</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.3
+                            <span>• 25-35 mins • ₹150 for two</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Non-Veg</span>
+                            <span class="tag">Free Delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div class="restaurant-image">
+                        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&h=400&fit=crop&auto=format&q=80" alt="Itminaan Biryani" loading="lazy">
+                        <div class="discount-tag">25% OFF</div>
+                    </div>
+                    <div class="restaurant-info">
+                        <h3>Itminaan Biryani</h3>
+                        <p>Biryani, Mughlai, Indian</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.2
+                            <span>• 20-30 mins • ₹200 for two</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Non-Veg</span>
+                            <span class="tag">Bestseller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers" id="offers">
+        <div class="container">
+            <h2 class="section-title">Special Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-card" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877039348bf?w=800&h=400&fit=crop&auto=format&q=80')" data-offer-id="offer1">
+                    <div class="offer-content">
+                        <span class="offer-tag">Limited Time</span>
+                        <h3>50% OFF on First Order</h3>
+                        <p>Use code: EAT50</p>
+                        <button class="btn btn-outline">Order Now</button>
+                    </div>
+                </div>
+                <div class="offer-card" style="background-image: url('https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=800&h=400&fit=crop&auto=format&q=80')" data-offer-id="offer2">
+                    <div class="offer-content">
+                        <span class="offer-tag">Weekend Special</span>
+                        <h3>Free Dessert</h3>
+                        <p>On orders above ₹300</p>
+                        <button class="btn btn-outline">Grab Deal</button>
+                    </div>
+                </div>
+                <div class="offer-card" style="background-image: url('https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=800&h=400&fit=crop&auto=format&q=80')" data-offer-id="offer3">
+                    <div class="offer-content">
+                        <span class="offer-tag">Happy Hours</span>
+                        <h3>Buy 1 Get 1 Free</h3>
+                        <p>4 PM - 7 PM, Mon-Fri</p>
+                        <button class="btn btn-outline">View Menu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food/Offer Detail Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- App Download Section -->
+    <section class="app-download" id="download">
+        <div class="container">
+            <div class="app-content">
+                <h2>Get the EatClub App</h2>
+                <p>Download our app for exclusive offers and faster ordering</p>
+                <div class="app-buttons">
+                    <a href="#" class="app-btn">
+                        <i class="fab fa-apple"></i>
+                        <div>
+                            <span>Download on the</span>
+                            <strong>App Store</strong>
+                        </div>
+                    </a>
+                    <a href="#" class="app-btn">
+                        <i class="fab fa-google-play"></i>
+                        <div>
+                            <span>Get it on</span>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>For Foodies</h3>
+                    <ul>
+                        <li><a href="#">Code of Conduct</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Verified Users</a></li>
+                        <li><a href="#">Blogger Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>For Restaurants</h3>
+                    <ul>
+                        <li><a href="#">Add Restaurant</a></li>
+                        <li><a href="#">Claim Your Listing</a></li>
+                        <li><a href="#">Business App</a></li>
+                        <li><a href="#">Restaurant Widgets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> help@eatclub.in</li>
+                        <li><i class="fas fa-phone"></i> +91 1234567890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EatClub. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
